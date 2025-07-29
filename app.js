@@ -4,8 +4,9 @@ const cors = require('cors');
 const path = require('path');
 const http = require('http');
 const mongoose = require('mongoose');
+const authRoutes = require('./server/routes/authRoutes');
 
-const authRoutes = require('./routes/authRoutes');
+
 const setupSocket = require('./socket');
 
 const app = express();
