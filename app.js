@@ -5,9 +5,11 @@ const path = require('path');
 const http = require('http');
 const mongoose = require('mongoose');
 const authRoutes = require('./server/routes/authRoutes');
+const connectDB = require('./server/utils/db');
 
 
-const setupSocket = require('./socket');
+require('./server/socket');
+
 
 const app = express();
 const server = http.createServer(app);
